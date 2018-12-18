@@ -1,0 +1,109 @@
+/* 
+ * Create by Anderson Anizio
+*/
+
+
+/* GLOBAL STYLES */
+
+body {
+    font: normal 16px 'Open Sans', sans-serif;
+    color: #555;
+}
+
+.main-container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+/* 
+ * HEADER 
+ */
+
+.header {
+    height: 100vh;
+    position: relative;
+}
+
+.header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(10deg, red, orange);
+    z-index: -1;
+}
+
+.inner-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 0;
+}
+
+/* Logo */
+
+.logo {
+    font-size: 24px;
+}
+
+.logo a {
+    color: white;
+    opacity: 0.9;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    opacity: 1;
+}
+
+/* Menu */
+
+.main-menu a {
+    text-decoration: none;
+    color: white;
+    margin: 0 16px;
+    opacity: 0.9;
+}
+
+.main-menu a:hover {
+    opacity: 1;
+}
+
+/* Hero */
+
+.hero {
+    text-align: center;
+}
+
+.hero > * {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hero h2 {
+    color: white;
+    font-size: 50px;
+    margin: 0;
+}
+
+.hero h3 {
+    color: lightgray;
+    margin: 50px 0;
+}
+
+.hero-btn {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    background: #2196F3;
+    font-weight: bold;
+    padding: 15px 40px;
+    border-radius: 2px;
+}
