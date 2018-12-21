@@ -1,9 +1,12 @@
 /* 
- * Create by Anderson Anizio
+ * Created by Anderson Anizio
 */
 
 
-/* GLOBAL STYLES */
+
+/* 
+ *  GENERAL STYLES
+ */
 
 body {
     font: normal 16px 'Open Sans', sans-serif;
@@ -20,10 +23,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'Quicksand', sans-serif;
 }
 
+p {
+    line-height: 1.8rem;
+}
+
 
 
 /* 
- * MAIN HEADER 
+ *  MAIN HEADER 
  */
 
 .main-header {
@@ -127,12 +134,65 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+/* 
+ *  SECTION 
+ */
+
+.section {
+    padding: 100px 0;
+    text-align: center;
+}
+
+.section-state--odd {
+    background-color: #f3f3f3;
+}
+
+.section-title {
+    font-size: 34px;
+    margin-top: 0;
+}
+
+.section-desc {
+    max-width: 800px;
+    margin: 40px auto 0 auto;
+}
+
+.section-divider {
+    width: 140px;
+    border: 1px solid #0084ff;
+    margin: 40px auto;
+}
+
+
+
+/* 
+ *  FOOTER
+ */
+
+footer {
+    padding: 50px 0;
+    background: #3a4347;
+    color: #a0a0a0;
+    text-align: center;
+}
+
+footer a {
+    color: #d4d4d4;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: white;
+}
+
+
 
 /* 
 
     RESPONSIVE DESIGN
 
 */
+
 @media (max-width: 768px) {
 
     .main-header-top {
