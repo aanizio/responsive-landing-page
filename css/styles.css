@@ -160,7 +160,47 @@ p {
 .section-divider {
     width: 140px;
     border: 1px solid #0084ff;
-    margin: 40px auto;
+    margin: 40px auto 70px auto;
+}
+
+
+
+/* 
+ *  GALLERY
+ */
+
+.gallery {
+    width: 100%;
+}
+
+.gallery__row {
+    display: flex;
+    padding: 10px 0;
+}
+
+.gallery__item {
+    height: 350px;
+    background-color: #969696;
+    background-clip: content-box;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery__item:first-child {
+    padding-right: 20px;
+}
+
+.gallery__item--large {
+    flex-basis: 60%;
+}
+
+.gallery__item--small {
+    flex-basis: 40%;
+}
+
+.gallery__item img {
+    width: 100%;
+    height: 100%;
 }
 
 
