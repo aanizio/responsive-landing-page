@@ -267,6 +267,45 @@ p {
 
 
 /* 
+ *  NEWSLETTER SECTION
+ */
+
+.newsletter__form {
+    display: flex;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.newsletter__form input {
+    border-radius: 3px;
+}
+
+.newsletter__form input[type="email"] {
+    border: 1px solid gray;
+    padding: 14px;
+    margin-right: 20px;
+    flex: 1 1 auto;
+}
+
+.newsletter__form input[type="email"]:focus,
+.newsletter__form input[type="email"]:active,
+.newsletter__form input[type="email"]:hover {
+    border-color: black;
+}
+
+.newsletter__form input[type="submit"] {
+    padding: 14px 30px;
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+/* 
  *  FOOTER
  */
 
@@ -308,6 +347,18 @@ footer a:hover {
 
     .grid__item:first-child {
         margin: 0;
+    }
+
+    .newsletter__form {
+        flex-direction: column;
+    }
+
+    .newsletter__form input[type="email"] {
+        margin: 0 0 20px 0;
+    }
+
+    .newsletter__form input[type="submit"] {
+        flex: 1 1 auto;
     }
 
 }
