@@ -8,6 +8,10 @@
  *  GENERAL STYLES
  */
 
+:root {
+    --main-color: #2196F3;
+}
+
 body {
     font: normal 16px 'Open Sans', sans-serif;
     color: #555;
@@ -36,7 +40,7 @@ p {
 .main-header {
     height: 100vh;
     position: relative;
-    background-color: #2196F3;
+    background-color: var(--main-color);
 }
 
 .main-header-bg {
@@ -126,7 +130,7 @@ p {
     text-decoration: none;
     color: white;
     text-transform: uppercase;
-    background: #2196F3;
+    background: var(--main-color);
     font-weight: bold;
     padding: 15px 40px;
     border-radius: 2px;
@@ -159,8 +163,23 @@ p {
 
 .section-divider {
     width: 140px;
-    border: 1px solid #0084ff;
+    border: 1px solid var(--main-color);
     margin: 40px auto 70px auto;
+}
+
+
+
+/* 
+ *  GRID
+ */
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid__item {
+    flex: 1 1 33%;
 }
 
 
@@ -206,6 +225,28 @@ p {
 
 
 /* 
+ *  SERVICES SECTION
+ */
+
+.section.services .grid .grid__item i {
+    font-size: 50px;
+    color: var(--main-color);
+}
+
+.section.services .grid .grid__item h4 {
+    font-size: 22px;
+}
+
+.section.services .grid .grid__item p {
+    margin: 0 auto 0 auto;
+    padding-right: 30px;
+    padding-left: 30px;
+    max-width: 400px;
+}
+
+
+
+/* 
  *  FOOTER
  */
 
@@ -238,6 +279,15 @@ footer a:hover {
     .main-header-top {
         flex-direction: column;
         align-items: center;
+    }
+
+    .grid__item {
+        flex: 1 1 100%;
+        margin-top: 50px;
+    }
+
+    .grid__item:first-child {
+        margin: 0;
     }
 
 }
