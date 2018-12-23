@@ -247,6 +247,26 @@ p {
 
 
 /* 
+ *  TESTIMONIALS SECTION
+ */
+
+.testimonial {
+    margin: 40px auto 0 auto;
+    max-width: 900px;
+}
+
+.testimonial__quote {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.testimonial__author {
+    font-style: normal;
+}
+
+
+
+/* 
  *  FOOTER
  */
 
