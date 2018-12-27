@@ -10,6 +10,7 @@
 
 :root {
     --main-color: #2196F3;
+    --main-color-darker: #1668aa;
 }
 
 body {
@@ -29,6 +30,23 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     line-height: 1.8rem;
+}
+
+.btn-primary {
+    padding: 14px 30px;
+    background: var(--main-color);
+    border: 1px solid var(--main-color);
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 3px;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.btn-primary:hover {
+    background: var(--main-color-darker);
 }
 
 
@@ -68,6 +86,19 @@ p {
     flex-wrap: wrap;
     padding: 20px 0;
     z-index: 1;
+    opacity: 0;
+    animation: headerFadeIn 1s 1s forwards;
+}
+
+@keyframes headerFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Logo */
@@ -109,6 +140,19 @@ p {
     align-items: center;
     text-align: center;
     z-index: 2;
+    opacity: 0;
+    animation: heroFadeIn 1s 1s forwards;
+}
+
+@keyframes heroFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .hero > * {
@@ -124,16 +168,6 @@ p {
 .hero h3 {
     color: white;
     margin: 30px 0 60px 0;
-}
-
-.hero-btn {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-    background: var(--main-color);
-    font-weight: bold;
-    padding: 15px 40px;
-    border-radius: 2px;
 }
 
 
@@ -203,6 +237,11 @@ p {
     background-clip: content-box;
     background-size: cover;
     background-position: center;
+    transition: transform .5s;
+}
+
+.gallery__item:hover {
+    transform: scale(1.05);
 }
 
 .gallery__item:first-child {
@@ -228,20 +267,28 @@ p {
  *  SERVICES SECTION
  */
 
-.section.services .grid .grid__item i {
+.section.services .grid__item i {
     font-size: 50px;
     color: var(--main-color);
 }
 
-.section.services .grid .grid__item h4 {
+.section.services .grid__item h4 {
     font-size: 22px;
 }
 
-.section.services .grid .grid__item p {
+.section.services .grid__item p {
     margin: 0 auto 0 auto;
     padding-right: 30px;
     padding-left: 30px;
     max-width: 400px;
+}
+
+.section.services .grid__item i {
+    transition: transform .6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.section.services .grid__item:hover i {
+    transform: scale(1.4);
 }
 
 
@@ -277,30 +324,18 @@ p {
     margin: 0 auto;
 }
 
-.newsletter__form input {
-    border-radius: 3px;
-}
-
 .newsletter__form input[type="email"] {
     border: 1px solid gray;
     padding: 14px;
     margin-right: 20px;
     flex: 1 1 auto;
+    border-radius: 3px;
 }
 
 .newsletter__form input[type="email"]:focus,
 .newsletter__form input[type="email"]:active,
 .newsletter__form input[type="email"]:hover {
     border-color: black;
-}
-
-.newsletter__form input[type="submit"] {
-    padding: 14px 30px;
-    background: var(--main-color);
-    border: 1px solid var(--main-color);
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
 }
 
 
