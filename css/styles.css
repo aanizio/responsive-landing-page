@@ -349,6 +349,24 @@ footer p:last-child {
         align-items: center;
     }
 
+    .gallery__row {
+        flex-direction: column;
+        padding: 0 !important;
+    }
+
+    .gallery__row + .gallery__row {
+        padding-top: 10px !important;
+    }
+
+    .gallery__item {
+        flex-basis: auto;
+        padding: 0 !important;
+    }
+
+    .gallery__item + .gallery__item {
+        padding-top: 10px !important;
+    }
+
     .grid__item {
         flex: 1 1 100%;
         margin-top: 50px;
